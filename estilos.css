@@ -9,3 +9,10 @@ th, td{
 	padding: 5px;
 	text-align: center;
 }
+#comiteImg img{
+	width: 200px
+
+}
+#comiteImg label{
+	text-align: bottom;
+}
