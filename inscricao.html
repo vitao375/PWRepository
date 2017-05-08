@@ -19,7 +19,7 @@
 					<li><a href="Apresentação.html">Apresentação</a></li>
 					<li><a href="trabalhos.html">Trabalhos</a></li>
 					<li><a href="programacao.html">Programação</a></li>
-					<li><a href="inscricoes.html">Incrições</a></li>
+					<li><a href="inscricao.html">Incrições</a></li>
 					<li><a href="organizacao.html">Organização</a></li>
 					<li><a href="comite.html">Comitê Cientifico</a></li>
 					<li><a href="sobre.html">Sobre Alegrete</a></li>
@@ -68,6 +68,28 @@
 		</tr>
 		 </tbody>
 		</table>
+
+
+		<h1>Formulário de Inscrição no Evento </h1>
+	   <form id="frmInscricao" method="post" action="">
+	   <fieldset id="dados">
+			<legend>Informações pessoais</legend>
+			<label>Nome:</label><input name="nome" type="text" id="nome" size="50"><br />
+			<label>Instituição:</label><input name="inst" type="text" id="inst" size="50"><br />
+			<label>Curso :</label> <input name="curso" type="text" id="curso" size="50"><br />
+			<label>E-mail:</label> <input name="email" type="text" id="email" size="50"><br />
+
+			<label> Vinculo com a Instituição </label>
+			<select id="vinculo" name="vinculo">
+				<option value=""> Selecione uma opção</option>
+				<option value="aluno">Aluno Graduação </option>
+				<option value="alunoPos"> Aluno Pós-Graduação </option>
+				<option value="professor">Professor </option>
+				<option value="outro"> Outro </option>
+			</select>
+			<br />
+			<input type="submit" id="Gravar" name="Gravar" value="Gravar" /><br />
+		</fieldset>
 
 
 
