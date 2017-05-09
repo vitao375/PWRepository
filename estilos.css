@@ -31,3 +31,24 @@ th, td{
 .preto{
 	background-color: #B7B7B7;
 }
+
+.box0 { 
+    height: 100px;   
+    background-color: #9AFF9A;
+    box-shadow: 10px 10px 5px #888888;
+    border-radius: 20px 10px;
+    padding: 10px;
+}
+.box { 
+    height: 100px;   
+    background-color: #7CCD7C;
+    box-shadow: 10px 10px 5px #888888;
+    border-radius: 20px 10px;
+    padding: 10px;
+}
+
+img{
+
+	margin-right: 20px;
+	margin-bottom: 10px;
+}
