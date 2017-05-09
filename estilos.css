@@ -16,3 +16,18 @@ th, td{
 #comiteImg label{
 	text-align: bottom;
 }
+.rosa{
+	background-color: #F4CCCC;
+}
+.azul{
+	background-color: #C9DAF8;
+}
+.amarelo{
+	background-color: #FFF2CC;
+}
+.verde{
+	background-color: #B6D7A8;
+}
+.preto{
+	background-color: #B7B7B7;
+}
