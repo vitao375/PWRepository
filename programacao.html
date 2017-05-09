@@ -37,6 +37,16 @@
 			
 		</div>
 		<div id="conteudo" class="col-md-8">
+		<div class="text-center">
+			<fieldset>
+			<legend>Escolha a Opção desejada para destacar a tabela.</legend>
+				<input type="checkbox" name="Palestras" id="Palestras"><label>&nbsp;Palestras</label>
+				<input type="checkbox" name="FG" id="ForumGraduacao"><label>&nbsp;Fórum de Graduação</label>
+				<input type="checkbox" name="FPG" id="ForumPG"><label>&nbsp;Fórum de PG</label>
+				<input type="checkbox" name="Cursos" id="Cursos"><label>&nbsp;Cursos</label>
+				<input type="checkbox" name="Pausas" id="Pausas"><label>&nbsp;Pausas</label>
+			</fieldset>
+		</div>
 		<table>
 			<tr>
 				<th>Hora</th>
@@ -47,76 +57,76 @@
 			<tr>
 				<td>8:00 - 9:00</td>
 				<td>Credenciamento</td>
-				<td>Fórum de Graduação</td>
-				<td>Forum de PG</td>
-				<td colspan="3">Palestra D</td>
+				<td id="FG">Fórum de Graduação</td>
+				<td id="FPG">Forum de PG</td>
+				<td colspan="3" id="Palt">Palestra D</td>
 			</tr>
 			<tr>
 				<td>9:00 - 10:00</td>
-				<td>Palestra A</td>
-				<td>Fórum de Graduação</td>
-				<td>Forum de PG</td>
-				<td>Fórum de Graduação</td>
-				<td>Forum de PG</td>
+				<td id="Palt">Palestra A</td>
+				<td id="FG">Fórum de Graduação</td>
+				<td id="FPG">Forum de PG</td>
+				<td id="FG">Fórum de Graduação</td>
+				<td id="FPG">Forum de PG</td>
 				<td>-</td>
 			</tr>
 			<tr>
 				<td>10:00 - 10:30</td>
-				<td colspan="6"><b>Coffe Break</b></td>
+				<td colspan="6" id="STOP"><b>Coffe Break</b></td>
 			</tr>
 			<tr>
 				<td>10:30 - 11:00</td>
-				<td rowspan="2">Curso A</td>
-				<td>Fórum de Graduação</td>
-				<td>Forum de PG</td>
-				<td>Fórum de Graduação</td>
-				<td>Forum de PG</td>
-				<td rowspan="2">Curso C</td>
+				<td rowspan="2" id="CS">Curso A</td>
+				<td id="FG">Fórum de Graduação</td>
+				<td id="FPG">Forum de PG</td>
+				<td id="FG">Fórum de Graduação</td>
+				<td id="FPG">Forum de PG</td>
+				<td rowspan="2" id="CS">Curso C</td>
 			</tr>
 			<tr>
 				<td>11:00 - 12:30</td>
-				<td>Fórum de Graduação</td>
-				<td>Forum de PG</td>
-				<td>Fórum de Graduação</td>
-				<td>Forum de PG</td>
+				<td id="FG">Fórum de Graduação</td>
+				<td id="FPG">Forum de PG</td>
+				<td id="FG">Fórum de Graduação</td>
+				<td id="FPG">Forum de PG</td>
 			</tr>
 			<tr>
 				<td>12:30 - 14:00</td>
-				<td colspan="6"><b>Almoço</b></td>
+				<td colspan="6" id="STOP"><b>Almoço</b></td>
 			</tr>
 			<tr>
 				<td>14:00 - 15:00</td>
-				<td>Palestra B</td>
-				<td colspan="2">Palestra C</td>
-				<td>Forum de Graduação</td>
-				<td>Forum de PG</td>
-				<td rowspan="2">Curso D</td>
+				<td id="Palt">Palestra B</td>
+				<td colspan="2" id="Palt">Palestra C</td>
+				<td id="FG">Forum de Graduação</td>
+				<td id="FPG">Forum de PG</td>
+				<td rowspan="2" id="CS">Curso D</td>
 			</tr>
 			<tr>
 				<td>15:00 - 16:00</td>
-				<td>Curso B</td>
-				<td>Forum de Graduação</td>
-				<td>Forum de PG</td>
-				<td>Forum de Graduação</td>
-				<td>Forum de PG</td>
+				<td id="CS">Curso B</td>
+				<td id="FG">Forum de Graduação</td>
+				<td id="FPG">Forum de PG</td>
+				<td id="FG">Forum de Graduação</td>
+				<td id="FPG">Forum de PG</td>
 			</tr>
 			<tr>
 				<td>16:00 - 16:30</td>
-				<td colspan="6"><b>Coffe Break</b></td>
+				<td colspan="6" id="STOP"><b>Coffe Break</b></td>
 			</tr>
 			<tr>
 				<td>16:30 - 17:00</td>
-				<td rowspan="2">Curso B</td>
-				<td>Curso de Graduação</td>
-				<td>Forum de PG</td>
-				<td>Curso de Graduação</td>
-				<td>Forum de PG</td>
+				<td rowspan="2" id="CS">Curso B</td>
+				<td id="FG">Fórum de Graduação</td>
+				<td id="FPG">Forum de PG</td>
+				<td id="FG">Fórum de Graduação</td>
+				<td id="FPG">Forum de PG</td>
 				<td>Reunião da comissão da ERES</td>
 			</tr>
 			<tr>
 				<td>17:00 - 18:00</td>
-				<td>Forum de Graduação</td>
-				<td>Forum de PG</td>
+				<td id="FG">Forum de Graduação</td>
+				<td id="FPG">Forum de PG</td>
 				<td colspan="3">Encerramento</td>
 			</tr>
 		</table>
