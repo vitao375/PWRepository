@@ -1,139 +1,278 @@
-#conteudo{
-
-	padding-top: 60px;
-
-}
-
-table, th, td{
-
-			border: 1px solid black;
-
-			border-collapse: collapse;
-
-		}
-
-th, td{
-
-	padding: 5px;
-
-	text-align: center;
-
-}
-
-th{
-
-	background-color: rgba(0,0,0,0.2);
-
-}
-
-#comiteImg img{
-
-	width: 200px
-
-
-
-}
-
-#comiteImg label{
-
-	text-align: bottom;
-
-}
-
-.rosa{
-
-	background-color: #F4CCCC;
-
-}
-
-.azul{
-
-	background-color: #C9DAF8;
-
-}
-
-.amarelo{
-
-	background-color: #FFF2CC;
-
-}
-
-.verde{
-
-	background-color: #B6D7A8;
-
-}
-
-.preto{
-
-	background-color: #B7B7B7;
-
-}
-
-.Hora{
-
-	background-color: rgba(0,0,0,0.1);
-
-}
-
-
-
-.box0 { 
-
-    height: 100px;   
-
-    background-color: #9AFF9A;
-
-    box-shadow: 10px 10px 5px #888888;
-
-    border-radius: 20px 10px;
-
-    padding: 10px;
-
-}
-
-.box { 
-	background-color: #7CCD7C;
-
-    height: 100px;   
-
-    
-
-    box-shadow: 10px 10px 5px #888888;
-
-    border-radius: 20px 10px;
-
-    padding: 10px;
-
-}
-
-
-
-img{
-
-
-
-	margin-right: 20px;
-
-	/*margin-bottom: 1px;
-
-	/*margin-top: 10px;*/
-
-}
-
-#icones{
-
-	margin-left: 40%;
-
-}
-
-	position: relative;
-	text-align: center;
-	max-width:200px;
-    max-height:150px;
-    width: auto;
-    height: auto;
+#conteudo{
+
+
+
+	padding-top: 60px;
+
+
+
 }
-p{ 
-	text-align: justify;
- }
+
+p{
+	text-align: justify;
+}
+
+table, th, td{
+
+
+
+			border: 1px solid black;
+
+
+
+			border-collapse: collapse;
+
+
+
+		}
+
+
+
+th, td{
+
+
+
+	padding: 5px;
+
+
+
+	text-align: center;
+
+
+
+}
+
+
+
+th{
+
+
+
+	background-color: rgba(0,0,0,0.2);
+
+
+
+}
+
+
+
+#comiteImg img{
+
+
+
+	width: 200px
+
+
+
+
+
+
+
+}
+
+
+
+#comiteImg label{
+
+
+
+	text-align: bottom;
+
+
+
+}
+
+
+
+.rosa{
+
+
+
+	background-color: #F4CCCC;
+
+
+
+}
+
+
+
+.azul{
+
+
+
+	background-color: #C9DAF8;
+
+
+
+}
+
+
+
+.amarelo{
+
+
+
+	background-color: #FFF2CC;
+
+
+
+}
+
+
+
+.verde{
+
+
+
+	background-color: #B6D7A8;
+
+
+
+}
+
+
+
+.preto{
+
+
+
+	background-color: #B7B7B7;
+
+
+
+}
+
+
+
+.Hora{
+
+
+
+	background-color: rgba(0,0,0,0.1);
+
+
+
+}
+
+
+
+
+
+
+
+.box0 { 
+
+
+
+    height: 100px;   
+
+
+
+    background-color: #9AFF9A;
+
+
+
+    box-shadow: 10px 10px 5px #888888;
+
+
+
+    border-radius: 20px 10px;
+
+
+
+    padding: 10px;
+
+
+
+}
+
+
+
+.box { 
+
+	background-color: #7CCD7C;
+
+
+
+    height: 100px;   
+
+
+
+    
+
+
+
+    box-shadow: 10px 10px 5px #888888;
+
+
+
+    border-radius: 20px 10px;
+
+
+
+    padding: 10px;
+
+
+
+}
+
+
+
+
+
+
+
+img{
+
+
+
+
+
+
+
+	margin-right: 20px;
+
+
+
+	/*margin-bottom: 1px;
+
+
+
+	/*margin-top: 10px;*/
+
+
+
+}
+
+
+
+#icones{
+
+
+
+	margin-left: 40%;
+
+
+
+}
+
+
+
+	position: relative;
+
+	text-align: center;
+
+	max-width:200px;
+
+    max-height:150px;
+
+    width: auto;
+
+    height: auto;
+
+}
+p{ 
+
+	text-align: justify;
+
+ }

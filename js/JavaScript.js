@@ -17,4 +17,12 @@ $(document).ready(function(){
 	$("#botaoCores").click(function() {
 		$("#tableCor").toggle();
 	});
+	$("#hideHotel").click(function() {
+		$("#Hoteis").toggle();
+	});
+	$("#mostrarRest").click(function(){
+		$("#restaurantes").toggle();
+	});
+	$("#Hoteis").hide();
+	$("#restaurantes").hide();
 });
