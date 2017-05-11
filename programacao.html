@@ -48,13 +48,18 @@
 		</div>
 		<div id="conteudo" class="col-md-8">
 		<div class="text-center">
-			<fieldset>
-			<legend>Escolha a Opção desejada para destacar a tabela.</legend>
+			<button type="button" class="btn btn-info" id="botaoCores">Destacar</button>
+			<br>
+			<br>
+			<fieldset id="tableCor">
+				<legend>Escolha a Opção desejada para destacar a tabela.</legend>
 				<input type="checkbox" name="Palestras" id="Palestras"><label>&nbsp;Palestras</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 				<input type="checkbox" name="FG" id="ForumGraduacao"><label>&nbsp;Fórum de Graduação</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 				<input type="checkbox" name="FPG" id="ForumPG"><label>&nbsp;Fórum de PG</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 				<input type="checkbox" name="Cursos" id="Cursos"><label>&nbsp;Cursos</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 				<input type="checkbox" name="Pausas" id="Pausas"><label>&nbsp;Pausas</label>
+				<br>
+			<br>
 			</fieldset>
 		</div>
 		<table>
@@ -151,7 +156,9 @@
 
 
 	</tbody>
-
+<script type="text/javascript">
+	$("#tableCor").hide();
+</script>
 
 </body>
 </html>
