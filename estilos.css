@@ -252,27 +252,12 @@ img{
 
 	margin-left: 40%;
 
-
-
 }
 
+ #patro {
+ 	display: inline-block;
+ }
+ footer{
 
-
-	position: relative;
-
-	text-align: center;
-
-	max-width:200px;
-
-    max-height:150px;
-
-    width: auto;
-
-    height: auto;
-
-}
-p{ 
-
-	text-align: justify;
-
+ 	text-align: center;
  }
