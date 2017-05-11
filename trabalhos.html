@@ -6,6 +6,84 @@
 	<script src="jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="estilos.css">
+
+
+
+<script language="JavaScript" src="js/jquery.js" type="text/javascript"></script>
+	<script language="JavaScript" src="js/jquery.validate.js" type="text/javascript"></script> 
+	<style>
+		label.error { font-family:Verdana; font-size: 96%; float: right; color: red; margin: 0 .5em 0 0; vertical-align: top; font-size: 10px }
+		p { clear: both; }
+		.submit { margin-top: 1em; }
+		em { font-weight: bold; padding-right: 1em; vertical-align: top; }
+	</style> 
+
+	<script type="text/javascript">
+
+	     $(document).ready(function(){
+			$("#frmInscricao").validate({
+
+			// Define as regras
+			rules:{
+				titulo: {
+
+					required: true, minlength: 3
+				},
+				
+				nome:{
+					// campoNome será obrigatorio (required) e terá tamanho minimo (minLength)
+					required: true, minlength: 3
+				},
+
+				email:{
+
+					required: true
+				},
+				vinculo:{
+
+					required:true
+				}, 
+
+				resumo:{
+					required: true , minlength: 300
+				},
+			},
+			messages:{
+
+				titulo: {
+
+					required: "É obrigatorio fronecer um titulo!"
+				},
+
+				nome:{
+					required: "E obrigatorio fornecer um nome!",
+					minlength: "O nome deve conter, no mínimo, 3 caracteres"
+				},
+				email:{
+
+					required: "Forneça um endereço de e-mail válido!"
+				},
+				vinculo:{
+
+					required:"É necessario informar um tipo de vinculo!"
+				},
+
+				resumo:{
+
+					required:"É obrigatorio informar o resumo! No minimo 300 caracteres!"
+					
+				},
+			}
+       });
+	});
+
+</script>
+
+
+
+
+
+
 </head>
 <body>
 	<header>
@@ -96,11 +174,66 @@
 
 
 					<h2> <small> Formulário de Submissão </small></h2>
+					<div class="panel panel-primary">
+                    <div class="panel-heading">Informações Sobre o Trabalho</div>
+                    <div class="panel-body">
+
+
+
+				<form id="frmInscricao" method="post" action="hahah.html">
+					
+
+						<div class="form-group">
+						<label>Titulo:</label>
+						<input name="titulo" type="text" class="form-control"  placeholder="Digite o titulo do trabalho..." >
+						</div>	
+					
+						<div class="form-group">
+						<label>Autor:</label>
+						<input name="nome" type="text" class="form-control"  placeholder="Digite o nome do autor..." >
+						</div>	
+
+						<div class="form-group">
+						<label>Email:</label>
+						<input type="email" class="form-control" name="email"  placeholder="Digite um e-mail...">
+						</div>	
+
+						<div class="form-group">
+						<label >Palavras Chave</label>
+						<input type="text" class="form-control" name="Palavras"  placeholder="Digite algumas palavras ...">
+						</div>	
+
+						<div class="form-group">
+						<label>Instituição:</label>
+						<input type="text" class="form-control" name="Instituicao"  placeholder="Digite o Nome da Intituição..."> <br />
+						</div>	
+
+
+						<div class="form-group">
+						<label>Resumo:</label>
+						<textarea placeholder="Resumo do trabalho..." class="form-control" name="resumo"   rows="4" cols="50" >
+							
+
+						</textarea>
+						
+						
+						<br />
+						<label> Vinculo com a Instituição </label>
+						<select id="vinculo" name="vinculo">
+							<option value=""> Selecione uma opção</option>
+							<option value="aluno">Aluno Graduação </option>
+							<option value="alunoPos"> Aluno Pós-Graduação </option>
+							<option value="professor">Professor </option>
+							<option value="outro"> Outro </option>
+						</select>
+						<br />
+						</div>
+						 <button type="submit" class="btn btn-success">Enviar</button>
 
 
 
 
-					</ul>
+					
 
 
 					
