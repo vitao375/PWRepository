@@ -255,8 +255,7 @@ img{
 }
 
  .patro {
- 	display: inline-block;
- 	
+ 	display: inline-block; 	
 
  }
  footer{
@@ -266,6 +265,15 @@ img{
  .floating-box {
     display: inline-block;
     margin: 10px;
-      
+
 }
-/*so
+#ERAD{
+	position: absolute;
+	margin-top: 60px;
+	margin-left: 50px
+}
+#unipampa{
+	position: absolute;
+	margin-top: 60px;
+	margin-left: 900px;
+}
