@@ -14,4 +14,7 @@ $(document).ready(function(){
 	$("#Pausas").click(function(){
 		$(".STOP").toggleClass("preto");
 	});
+	$("#botaoCores").click(function() {
+		$("#tableCor").toggle();
+	});
 });
