@@ -29,4 +29,5 @@ $(document).ready(function(){
 	$("#Hoteis").hide();
 	$("#restaurantes").hide();
 	$("#onibus").hide();
+	$("#tableCor").hide();
 });
