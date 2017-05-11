@@ -23,6 +23,10 @@ $(document).ready(function(){
 	$("#mostrarRest").click(function(){
 		$("#restaurantes").toggle();
 	});
+	$("#hideOnibus").click(function(){
+		$("#onibus").toggle();
+	});
 	$("#Hoteis").hide();
 	$("#restaurantes").hide();
+	$("#onibus").hide();
 });
