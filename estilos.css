@@ -254,10 +254,19 @@ img{
 
 }
 
- #patro {
+ .patro {
  	display: inline-block;
+ 	
+ 	
  }
  footer{
 
  	text-align: center;
  }
+ .floating-box {
+    display: inline-block;
+    width: 150px;
+    height: 75px;
+    margin: 10px;
+     
+}
