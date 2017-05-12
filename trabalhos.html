@@ -9,7 +9,7 @@
 
 
 
-<script language="JavaScript" src="js/jquery.js" type="text/javascript"></script>
+	<script language="JavaScript" src="js/jquery.js" type="text/javascript"></script>
 	<script language="JavaScript" src="js/jquery.validate.js" type="text/javascript"></script> 
 	<style>
 		label.error { font-family:Verdana; font-size: 96%; float: right; color: red; margin: 0 .5em 0 0; vertical-align: top; font-size: 10px }
@@ -20,8 +20,30 @@
 
 	<script type="text/javascript">
 
-	     $(document).ready(function(){
-			$("#frmInscricao").validate({
+		$(document).ready(function(){
+	     	var campos_max = 10;   //max de 10 campos
+        var x = 1; // campos iniciais
+        $('#campo').click (function(e) {
+                e.preventDefault();     //prevenir novos clicks
+                if (x < campos_max) {
+                	$('#adicionar').append('<div> \ <div class= "form-group">\ <label>Autor:</label>\
+										<input name="nome['+x+']" type="text" class="form-control"  placeholder="Digite o nome do autor..." >\  </div>\ <div class= "form-group">\ <label>Email:</label>\
+										<input name="email['+x+']" type="text" class="form-control"  placeholder="Digite o email do autor..." >\  </div>\
+                		<input   type="button" class="btn btn-info " value = "Remover Autor" id= "remover_campo">  \
+                	 </div>');
+                	x++;
+                }
+            });
+
+        // Remover o div anterior
+        $('#adicionar').on("click","#remover_campo",function(e) {
+        	e.preventDefault();
+        	$(this).parent('div').remove();
+        	x--;
+        });
+
+
+        $("#frmInscricao").validate({
 
 			// Define as regras
 			rules:{
@@ -34,8 +56,9 @@
 					// campoNome será obrigatorio (required) e terá tamanho minimo (minLength)
 					required: true, minlength: 3
 				},
+				
 
-				email:{
+			    email:{
 
 					required: true
 				},
@@ -54,6 +77,7 @@
 
 					required: "É obrigatorio fronecer um titulo!"
 				},
+				
 
 				nome:{
 					required: "E obrigatorio fornecer um nome!",
@@ -74,8 +98,8 @@
 					
 				},
 			}
-       });
-	});
+		});
+    });
 
 </script>
 
@@ -166,94 +190,106 @@
 					</ul>
 					<h2> <small> Datas Importantes </small></h2>
 					<ul class="outside"> 
-					<li> Submissão de resumos: 27/08/2017 </li>
-					<li> Submissão de artigos: 03/09/2017 </li>
-					<li> Comunicação dos resultados: 24/09/2017</li>
-					<li> Envio da versão final: 01/10/2017 </li>
+						<li> Submissão de resumos: 27/08/2017 </li>
+						<li> Submissão de artigos: 03/09/2017 </li>
+						<li> Comunicação dos resultados: 24/09/2017</li>
+						<li> Envio da versão final: 01/10/2017 </li>
 					</ul>
 
 
 					<h2> <small> Formulário de Submissão </small></h2>
 					<div class="panel panel-primary">
-                    <div class="panel-heading">Informações Sobre o Trabalho</div>
-                    <div class="panel-body">
+						<div class="panel-heading">Informações Sobre o Trabalho</div>
+						<div class="panel-body">
 
 
 
-				<form id="frmInscricao" method="post" action="hahah.html">
-					
-
-						<div class="form-group">
-						<label>Titulo:</label>
-						<input name="titulo" type="text" class="form-control"  placeholder="Digite o titulo do trabalho..." >
-						</div>	
-					
-						<div class="form-group">
-						<label>Autor:</label>
-						<input name="nome" type="text" class="form-control"  placeholder="Digite o nome do autor..." >
-						</div>	
-
-						<div class="form-group">
-						<label>Email:</label>
-						<input type="email" class="form-control" name="email"  placeholder="Digite um e-mail...">
-						</div>	
-
-						<div class="form-group">
-						<label >Palavras Chave</label>
-						<input type="text" class="form-control" name="Palavras"  placeholder="Digite algumas palavras ...">
-						</div>	
-
-						<div class="form-group">
-						<label>Instituição:</label>
-						<input type="text" class="form-control" name="Instituicao"  placeholder="Digite o Nome da Intituição..."> <br />
-						</div>	
+							<form id="frmInscricao" method="post" action="hahah.html">
 
 
-						<div class="form-group">
-						<label>Resumo:</label>
-						<textarea placeholder="Resumo do trabalho..." class="form-control" name="resumo"   rows="4" cols="50" >
-							
+								<div class="form-group">
+									<label>Titulo:</label>
+									<input name="titulo" type="text" class="form-control"  placeholder="Digite o titulo do trabalho..." >
+								</div>	
 
-						</textarea>
-						
-						
-						<br />
-						<label> Vinculo com a Instituição </label>
-						<select id="vinculo" name="vinculo">
-							<option value=""> Selecione uma opção</option>
-							<option value="aluno">Aluno Graduação </option>
-							<option value="alunoPos"> Aluno Pós-Graduação </option>
-							<option value="professor">Professor </option>
-							<option value="outro"> Outro </option>
-						</select>
-						<br />
+								<div id="adicionar"> 
+									<div class="form-group">
+										<label>Autor:</label>
+										<input name="nome" type="text" class="form-control"  placeholder="Digite o nome do autor..." >
+									</div> 
+									<div class="form-group">
+										<label>Email:</label>
+										<input type="email" class="form-control" name="email"  placeholder="Digite um e-mail...">
+									</div>	
+
+
+
+
+									<input type="button" class="btn btn-info " id="campo" value="Adicionar Autor">
+
+
+
+
+								</div>	<br>
+
+
+
+								<div class="form-group">
+									<label >Palavras Chave</label>
+									<input type="text" class="form-control" name="Palavras"  placeholder="Digite algumas palavras ...">
+								</div>	
+
+								<div class="form-group">
+									<label>Instituição:</label>
+									<input type="text" class="form-control" name="Instituicao"  placeholder="Digite o Nome da Intituição..."> <br />
+								</div>	
+
+
+								<div class="form-group">
+									<label>Resumo:</label>
+									<textarea placeholder="Resumo do trabalho..." class="form-control" name="resumo"   rows="4" cols="50" >
+
+
+									</textarea>
+
+
+									<br />
+									<label> Vinculo com a Instituição </label>
+									<select id="vinculo" name="vinculo">
+										<option value=""> Selecione uma opção</option>
+										<option value="aluno">Aluno Graduação </option>
+										<option value="alunoPos"> Aluno Pós-Graduação </option>
+										<option value="professor">Professor </option>
+										<option value="outro"> Outro </option>
+									</select>
+									<br />
+								</div>
+								<button type="submit" class="btn btn-success">Enviar</button>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+							</div>
+							<div class="col-md-2">
+
+							</div>
+
 						</div>
-						 <button type="submit" class="btn btn-success">Enviar</button>
 
 
 
-
-					
-
-
-					
+					</tbody>
 
 
-
-
-
-
-				</div>
-				<div class="col-md-2">
-
-				</div>
-
-			</div>
-
-
-
-		</tbody>
-
-
-	</body>
-	</html>
+				</body>
+				</html>
