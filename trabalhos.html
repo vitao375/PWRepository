@@ -27,8 +27,8 @@
                 e.preventDefault();     //prevenir novos clicks
                 if (x < campos_max) {
                 	$('#adicionar').append('<div> \ <div class= "form-group">\ <label>Autor:</label>\
-										<input name="nome['+x+']" type="text" class="form-control"  placeholder="Digite o nome do autor..." >\  </div>\ <div class= "form-group">\ <label>Email:</label>\
-										<input name="email['+x+']" type="text" class="form-control"  placeholder="Digite o email do autor..." >\  </div>\
+										<input  type="text" class="form-control" name="nome" placeholder="Digite o nome do autor..." >\  </div>\ <div class= "form-group">\ <label>Email:</label>\
+										<input type="text" class="form-control"   name="email" placeholder="Digite o email do autor..." >\  </div>\
                 		<input   type="button" class="btn btn-info " value = "Remover Autor" id= "remover_campo">  \
                 	 </div>');
                 	x++;
@@ -209,13 +209,13 @@
 
 								<div class="form-group">
 									<label>Titulo:</label>
-									<input name="titulo" type="text" class="form-control"  placeholder="Digite o titulo do trabalho..." >
+									<input  type="text" class="form-control" name="titulo" placeholder="Digite o titulo do trabalho..." >
 								</div>	
 
 								<div id="adicionar"> 
 									<div class="form-group">
 										<label>Autor:</label>
-										<input name="nome" type="text" class="form-control"  placeholder="Digite o nome do autor..." >
+										<input  type="text" class="form-control" name="nome" placeholder="Digite o nome do autor..." >
 									</div> 
 									<div class="form-group">
 										<label>Email:</label>
