@@ -1,53 +1,46 @@
 <!DOCTYPE html>
 
 <head lang = "pt-br">
-
-	<meta charset="utf-8">
-
+<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-
 	<link rel="stylesheet" href="css/bootstrap.min.css">
-
-	<script src="jquery.min.js"></script>
-
+	<script src="js/jquery.min.js"></script>
+	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
+	<script src="js/JavaScript.js"></script>
 	<script src="js/bootstrap.min.js"></script>
-
 	<link rel="stylesheet" type="text/css" href="estilos.css">
+
 
 </head>
 
 <body>
 
 	<header>
-
 		<nav class="navbar navbar-inverse navbar-fixed-top">
 	<div class="container">
 		<div class="navbar-header">
-			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" >
 				<span class="sr-only">Toggle navigation</span>
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
 			</button>
-			<a class="navbar-brand" href="#">Project name</a>
+			<a class="navbar-brand" href="#">ERES - 2017</a>
 		</div>
 		<div id="navbar" class="navbar-collapse collapse">
 			<ul class="nav navbar-nav">
 				<li><a href="home.html">Home</a></li>
-				<li><a href="Apresentação.html">Apresentação</a></li>
 				<li><a href="trabalhos.html">Trabalhos</a></li>
 				<li><a href="programacao.html">Programação</a></li>
 				<li><a href="inscricao.html">Incrições</a></li>
 				<li><a href="organizacao.html">Organização</a></li>
-				<li><a href="comite.html">Comitê Cientifico</a></li>
+				<li><a href="comite.html">Comitê</a></li>
 				<li><a href="sobre.html">Sobre Alegrete</a></li>
-				<li><a href="contato.html">Contato </a></li>
 			</ul>
 
 		</div><!--/.nav-collapse -->
 	</div>
 </nav>
-
 	</header>
 
 
@@ -91,17 +84,9 @@
 
 
 
-			<p class="aling-center">
+			
 
-			<a href=" https://www.tripadvisor.com.br/Hotels-g2344057-Alegrete_State_of_Rio_Grande_do_Sul-Hotels.html" 
-			class="btn btn-info btn-lg" id="centro">
-			<span class="glyphicon glyphicon-bed"> </span> Hotéis</a>
-            <br />
-            </p> <br />
-
-                       <a href=" https://www.tripadvisor.com.br/Restaurants-g2344057-Alegrete_State_of_Rio_Grande_do_Sul.html" 
-			class="btn btn-info btn-lg" id="centro">
-          <span class="	glyphicon glyphicon-cutlery"></span> Restaurantes </a>
+                       
 
 			
 
@@ -141,26 +126,17 @@
 
 
 
-
-
-
-
-
-
-
-			 <hr>
-
-			 <br>
-
-			 <a href="http://alegretetudo.com.br/novos-horarios-no-transporte-coletivo-a-partir-desta-segunda-feira/"
-			class="btn btn-info btn-lg"> Trasporte Público </a> <br>
+				<h2>Transporte Público</h2><br>
+			<button type="button" id="hideOnibus" class="btn btn-info">Transporte Público</button>
+			<br><br>
+			<div id="onibus">
 			<table>
 				<tr>
 					<th>Locais</th>
-					<th colspan="8">Horarios na Unipampa</th>
+					<th colspan="9">Horarios na Unipampa</th>
 				</tr>
 				<tr>
-					<td>Capão do Angico/Boa Vista</td>
+					<td>Capão do Angico / Boa Vista</td>
 					<td>07:52</td>
 					<td>09:32</td>
 					<td>11:12</td>
@@ -169,10 +145,246 @@
 					<td>16:12</td>
 					<td>17:52</td>
 					<td>19:32</td>
+					<td>-</td>
+				</tr>
+				<tr>
+					<td>Favila / Boa Vista</td>
+					<td>08:10</td>
+					<td>09:50</td>
+					<td>11:30</td>
+					<td>13:10</td>
+					<td>14:50</td>
+					<td>16:30</td>
+					<td>18:10</td>
+					<td>-</td>
+					<td>-</td>
+				</tr>
+				<tr>
+					<td>Favila Terminal</td>
+					<td>07:26</td>
+					<td>09:06</td>
+					<td>10:46</td>
+					<td>12:26</td>
+					<td>14:06</td>
+					<td>15:46</td>
+					<td>17:29</td>
+					<td>19:06</td>
+					<td>-</td>
+				</tr>
+				<tr>
+					<td>Vera Cruz / DR. Romário</td>
+					<td>07:52</td>
+					<td>09:39</td>
+					<td>11:09</td>
+					<td>12:39</td>
+					<td>14:09</td>
+					<td>15:39</td>
+					<td>17:09</td>
+					<td>18:39</td>
+					<td>20:09</td>
 				</tr>
 			</table>
-
 			<br>
+			
+				</div>
+<a class="links" target="_blank" href="http://alegretetudo.com.br/novos-horarios-no-transporte-coletivo-a-partir-desta-segunda-feira/"
+			class="btn btn-info btn-lg">Clique aqui para mais informações sobre horários de ônibus</a>
+				<br><br><br>
+		<h2>Hotéis e Restaurantes</h2>
+		<br>
+
+				<div class="floating-box">
+				<button style="margin-right: 50px" class="btn btn-info" id="hideHotel">Hotéis</button>
+				<button type="button" class="btn btn-info" id="mostrarRest">Restaurantes</button>
+
+				</div>
+				<br><br>
+
+				<div id="Hoteis">
+					<br>
+					<h2>Hotéis</h2>
+					<br>
+					<p><strong>HOTEL CAVERÁ</strong></p>
+					<p>Bento Manoel, 839 - Bairro Cidade Alta</p>
+					<p>Telefones: (55) 3422-4296</p>
+					<a target="_blank" href="http://www.hotelcavera.com.br">Site</a>
+					<br><br>
+
+					<p><strong>HOTEL DE TRÂNSITO DE ALEGRETE</strong></p>
+					<p>Rua Luiz de Freitas, 121 - Centro</p>
+					<p>Telefone: (55) 3422-4701</p>
+					<br>
+
+					<p><strong>HOTEL SÃO JORGE</strong></p>
+					<p>Rua Joaquim Nabuco, 214 - Centro</p>
+					<p>Telefones: (55) 3422-5300</p>
+					<a target="_blank" href="http://www.saojorgehotel.com.br">Site</a>
+					<br><br>
+
+					<p><strong>HOTEL TEXACÃO DO CAVERÁ</strong></p>
+					<p>BR 290, Km 575</p>
+					<p>Telefones: (55) 3422-4155</p>
+					<br><br>
+
+					<p><strong>HOTEL REFAZENDA</strong></p>
+					<p>BR 290, 4470 - KM 579 - Caverá - Alegrete - RS</p>
+					<p>Telefones: 3426 1503 CEL: 9922 2504 - 9917 6256</p>
+					<p>Com: Apartamentos com ar-condicionado - Piscina - Trilhas ecológicas - Áreas de lazer com churrasqueira - Pracinha - Quadra para volei e futebol - Salão de festas com churrasqueira e cozinha - Pistas para motos e Jipeiros - Praias do Rio Caverá e Rio Ibirapuitã</p>
+					<br><br>
+
+					<p><strong>EXPRESSO HOTEL</strong></p>
+					<p>Rua: Gal. Neto, 99 - CEP 9741-250 - centro - Alegrete - RS</p>
+					<p>Telefone: (55)3422-1498</p>
+					<p>Com: Apartamento com banheiro e ar condicionado - Café da Manhã - Garagem</p>
+					<br><br>
+
+					<p><strong>HOTEL ALEGRETE</strong></p>
+					<p>Av. Liberdade N° 268 - CEP: 97543-370 - Coxilha - Alegrete - RS</p>
+					<p>Telefones: (55) 3422 6366 - (55)9954 0675</p>
+					<p>E-mail: hotelalegrete@interneith.com.br</p>
+					<p>Com: Apartamento com banheiro e ar condicionado - Café da Manhã - Garagem</p>
+					<a target="_blank" href="http://www.hotelalegrete.com.br">Site</a>
+					<br><br>
+
+				</div>
+
+
+				
+
+				<div id="restaurantes">
+				<h2>Restaurantes</h2>
+				<br>
+					<table>
+						<tr>
+							<th>Nome</th>
+							<th>Endereço</th>
+							<th>Telefone</th>
+						</tr>
+						<tr>
+							<td>Bar e Restaurante Papa Pila</td>
+							<td>Presidente F. Roosevelt, 220</td>
+							<td>(55) 3422 0783</td>
+						</tr>
+						<tr>
+							<td>Botoni 24 Horas</td>
+							<td>Mariz e Barros, 603</td>
+							<td>(55) 3426 4421</td>
+						</tr>
+						<tr>
+							<td>Busanello Grill Churrascaria</td>
+							<td>Gaspar Martins, 38 (Calçadão)</td>
+							<td>(55) 3422 0892</td>
+						</tr>
+						<tr>
+							<td>Butiquim Café</td>
+							<td>Vasco Alves, 227</td>
+							<td>(55) 3422 5577</td>
+						</tr>
+						<tr>
+							<td>Capri Restaurante</td>
+							<td>General Vitorino, 302</td>
+							<td>(55) 3422 5870</td>
+						</tr>
+						<tr>
+							<td>Chef Ivan Express</td>
+							<td>General Sampaio</td>
+							<td>(55) 3422 2478</td>
+						</tr>
+						<tr>
+							<td>Churrascaria Butecão do Moraes</td>
+							<td>Av. Tiaraju, 634</td>
+							<td>(55) 3422 2295</td>
+						</tr>
+						<tr>
+							<td>Comercial Buffon</td>
+							<td>BR 290, 578</td>
+							<td>(55) 3421 153(55)3421 5155</td>
+						</tr>
+						<tr>
+							<td>Davisconte Panquecaria</td>
+							<td>Visconde de Tamandaré, 851</td>
+							<td>(55) 3421 2625</td>
+						</tr>
+						<tr>
+							<td>Galeteria da Sociedade Italiana</td>
+							<td>Gaspar Martins, 275</td>
+							<td>(55) 3422 1934</td>
+						</tr>
+						<tr>
+							<td>Galeteria do Joãozinho</td>
+							<td>Mariz e Barros, 768</td>
+							<td>(55) 3422 7929</td>
+						</tr>
+						<tr>
+							<td>Galeto Q Brasa</td>
+							<td>General Sampaio, 700</td>
+							<td>(55) 3422 1737</td>
+						</tr>
+						<tr>
+							<td>Hotel Palace Churrascaria do Motorista</td>
+							<td>Av. Assis Brasil, 2042</td>
+							<td>(55) 3422 2596</td>
+						</tr>
+						<tr>
+							<td>Restaurante da CAAL</td>
+							<td>Rua Venâncio Aires, 112</td>
+							<td>(55) 3422 9200/3422 4743</td>
+						</tr>
+						<tr>
+							<td>Restaurante da Rodoviária</td>
+							<td>Praça Oswaldo Aranha</td>
+							<td>(55) 3422 5171</td>
+						</tr>
+						<tr>
+							<td>Restaurante Dom Augusto</td>
+							<td>Gaspar Martins, 124</td>
+							<td>(55) 3422 3154</td>
+						</tr>
+						<tr>
+							<td>Restaurante e Churrascaria Prodócimo</td>
+							<td>BR 290, 578</td>
+							<td>(55) 3422 0730</td>
+						</tr>
+						<tr>
+							<td>Restaurante Gardelon</td>
+							<td>Praça General Vitorino, 11</td>
+							<td>(55) 3422 2610</td>
+						</tr>
+						<tr>
+							<td>Restaurante Paladares</td>
+							<td>Praça General Osório, 240</td>
+							<td>(55) 3422 9274</td>
+						</tr>
+						<tr>
+							<td>Restaurante Texacão do Caverá</td>
+							<td>BR 290, 575</td>
+							<td>(55) 3422 5556</td>
+						</tr>
+						<tr>
+							<td>Restaurante Tradição</td>
+							<td>Vasco Alves, 183</td>
+							<td>(55) 3422 5104</td>
+						</tr>
+						<tr>
+							<td>Quiosque</td>
+							<td>Praça Getúlio Vargas</td>
+							<td>(55) 3422 4369</td>
+						</tr>
+					</table>
+					<br>
+				</div>
+
+				<a class="links" target="_blank" href="http://www.alegrete.rs.gov.br/site/?bW9kdWxvPTEmbWVudT0zMyZhcnF1aXZvPW1vc3RyYWNvbnRldWRvLnBocCZtdWRhdGVtcGxhdGU9dGVtcGxhdGUvdGVtcGxhdGVfcHJlZmVpdHVyYTIucGhw">Clique aqui para mais informações sobre Hotéis e Restaurantes.</a>
+				<br><br><br>
+
+
+
+
+
+
+			
+
+			 
 
 
 
@@ -200,7 +412,30 @@
 
 
 
+<footer>
+<br><br>		
+<div style=" width: 100%; height: 25px; background-color: rgb(125,125,125);"> </div>
+		
+			
+			<h3> Organização </h3>
+			<div class="patro ">
+			<img   src="Imagens/logo-unipampa.JPG" class="img-responsive floating-box" class="imagens" width="25%" height="10%">
+			</div>
+			<h3> Patrocinadores </h3>
+			<div class="patro">
+			
+			 <img  src="Imagens/P-ouro.PNG" class="floating-box img-responsive"> <img  style = "margin-left: 35 px; " src="Imagens/P-prata.JPG" class="floating-box img-responsive"><img  style = "margin-left: 55px; " src="Imagens/P-bronze.JPG" class="floating-box img-responsive"> 
+			</div>
+			<h3> Realização </h3>
+			
+			<div class="patro">
+			
+			<img src="Imagens/Logo-sbc-atualziado.JPG" class="img-responsive floating-box" class="imagens" width="10%" height="10%">	
+			</div>
+		
 
+		
+	</footer>
 </body>
 
 </html>
